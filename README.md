@@ -5,15 +5,22 @@ Task for theme REST API
 Create a REST API application that handles requests witn next paths:
 
 • '/Checkout' - POST request
+
 • '/Products'- GET and POST requests
+
 • '/Products/{index}'- GET, PUT and DELETE requests
+
 
 CheckoutController and ProductsController should handle the requests.
 
+
 CheckoutController:
+
 Should use ICartService, IPaymentService IShipmentService as a dependencies.
 
+
 Has one action ConductCheckout that handles POST requests.
+
 If Charge method of CartService returns true, the Ship method of ShipmentService sould be called and a result of this mentod should be returned from ConductCheckout. Otherwise, "not charged" should be returned
 
 ICartService should define and CartService should implement 2 methods:
