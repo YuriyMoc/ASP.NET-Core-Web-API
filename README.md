@@ -1,7 +1,9 @@
 # ASP.NET Core Web API
 
 Task for theme REST API
+
 Create a REST API application that handles requests witn next paths:
+
 • '/Checkout' - POST request
 • '/Products'- GET and POST requests
 • '/Products/{index}'- GET, PUT and DELETE requests
